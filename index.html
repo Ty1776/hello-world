@@ -6,6 +6,13 @@
   </head>
     <body>
       <header>
+        <script>
+          let user = prompt ("What's your name?");
+          if(user == "Tyler"){
+            document.write ("Hi Tyler");
+          }else{document.write("Hello ", user, "!");
+        }
+        </script>
         <h1>Tyler's Webpage for Camping</h1>
         <nav>
           <ul>
@@ -18,12 +25,24 @@
           </ul>  
         </nav>
       </header>
-      <main>
+      <main>            
         <section>
             <img id="banner" src="MtnBanner.jpg" alt="Person standing on ledge surrounded by mountains and River">
             <p class="credit1">Photo by <a href="https://unsplash.com/@juliacaesar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julia Caesar</a> on <a href="https://unsplash.com/s/photos/mountain-banner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
+            
             <p class="close">How do YOU like to camp? Established campgrounds? Overland camping?</p>
+            <script>
+              let doyou = prompt ("Do you like camping?");
+              doyou = doyou.toLowerCase();
+              if (doyou == "yes"){
+                document.write ("You're in the right place!");
+              } else if (doyou == "no"){
+                document.write ("Maybe I can change your mind!");
+              } else {document.write ("I don't understand...");
+            }
+            </script>
+
         </section>
         <section>
             <article>
@@ -49,6 +68,16 @@
 
       </main>
       <footer>
+        <script>
+          let camp = prompt ("camping or hotel?");
+          camp = camp.toLowerCase();
+          if (camp == "camping"){
+            document.write ("You've made the right choice!");      
+          }else if (camp == "hotel"){
+            document.write ("Hotels aren't very adventurous!");
+          }else {document.write ("You gotta be kidding me....");
+        }
+        </script>
         <p>&copy;Tyler Huntley</p>
       </footer>
     </body>
