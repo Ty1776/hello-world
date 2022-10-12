@@ -60,6 +60,10 @@ img{
         font-size: 30px;
 }
 
+article{
+    word-wrap: normal;
+}
+
 #banner{
     width: 600px;
     display: block;
