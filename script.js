@@ -1,7 +1,10 @@
 function greetUser() {
     let user = prompt("What's your name?");
-    if (user == "") {
-        user = prompt("Please tell me your name..")
+    // if (user == "") {
+    //     user = prompt("Please tell me your name..");
+    // }
+    while (user == "") {
+        user = prompt("Please tell me your name..");
     }
     return user;
 }
@@ -37,5 +40,14 @@ function tentHotel() {
 }
 
 
+function rateCamping(){
+    let outdoors = prompt("1-5 How much do you like camping?");
+    while (outdoors > 5) {
+        outdoors = prompt("Please choose a number between 1 and 5.");
+    }
 
+    for (let i = 0; i < outdoors; i++){
+        document.write("<img class='tent-pic' src='tent.png' alt='It's a tent!'>")
+    }
+}
 
