@@ -1,84 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Camping</title>
-    <link rel="stylesheet" href="mystyle.css">
-  </head>
-    <body>
-      <header>
-        <script>
-          let user = prompt ("What's your name?");
-          if(user == "Tyler"){
-            document.write ("Hi Tyler");
-          }else{document.write("Hello ", user, "!");
-        }
-        </script>
-        <h1>Tyler's Webpage for Camping</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://promegax.github.io/Til-Vahlala-/">Omega's Page</a>
-            </li>
-            <li>
-              <a href="#">Link 2</a>
-            </li>
-          </ul>  
-        </nav>
-      </header>
-      <main>            
-        <section>
-            <img id="banner" src="MtnBanner.jpg" alt="Person standing on ledge surrounded by mountains and River">
-            <p class="credit1">Photo by <a href="https://unsplash.com/@juliacaesar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julia Caesar</a> on <a href="https://unsplash.com/s/photos/mountain-banner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
-            
-            <p class="close">How do YOU like to camp? Established campgrounds? Overland camping?</p>
-            <script>
-              let doyou = prompt ("Do you like camping?");
-              doyou = doyou.toLowerCase();
-              if (doyou == "yes"){
-                document.write ("You're in the right place!");
-              } else if (doyou == "no"){
-                document.write ("Maybe I can change your mind!");
-              } else {document.write ("I don't understand...");
-            }
-            </script>
+<head>
+  <title>Camping</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="script.js"></script>
+</head>
 
-        </section>
-        <section>
-            <article>
-                <img id="tent1" src="rooftoptent.jpg" alt="Jeep with rooftop tent in the woods">
-                <p class="credit">Photo by <a href="https://unsplash.com/@itsbrianerickson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brian Erickson</a> on <a href="https://unsplash.com/s/photos/rooftop-tent?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-                
-                <p class="info">Rooftop tent camping. THIS is a great way to camp! It is my personal favorite way to camp.</p>
-            </article>
-            <article>
-                <img id="tent" src="campervan.jpg" alt="Volkswagen campervan in foggy mountains">
-                <p class="credit">Photo by <a href="https://unsplash.com/@zvchmiller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zach Miller</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-  
-                <p class="info">Campervan camping. Could be fun, but don't expect to get too far off of the road unless you have built your vehicle for overlanding.</p>
-            </article>
-            <article>
-                <img id="tent" src="rvcamping.jpg" alt="Recreational Vehicle and starry sky">
-                <p class="credit">Photo by <a href="https://unsplash.com/@hansonluu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hanson Lu</a> on <a href="https://unsplash.com/s/photos/rv-camping?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-  
-                <p class="info">RV camping? Is this really camping? Don't expect to get too far off of the road.</p>
-            </article>
-        </section>
-        <p class="close">No matter how you like to camp, get out there and have some fun!</p>
+<body>
+  <header>
+    <h1>Tyler's Webpage for Camping</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://promegax.github.io/Til-Vahlala-/">Omega's Page</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+<script>document.write ("Hello " + user + " we're glad that you're here!");</script>
+      <img id="banner" src="MtnBanner.jpg" alt="Person standing on ledge surrounded by mountains and River">
+      <p class="credit1">Photo by <a
+          href="https://unsplash.com/@juliacaesar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julia
+          Caesar</a> on <a
+          href="https://unsplash.com/s/photos/mountain-banner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+      <p class="close">How do YOU like to camp? Established campgrounds? Overland camping?</p>
+    </section>
 
-      </main>
-      <footer>
-        <script>
-          let camp = prompt ("camping or hotel?");
-          camp = camp.toLowerCase();
-          if (camp == "camping"){
-            document.write ("You've made the right choice!");      
-          }else if (camp == "hotel"){
-            document.write ("Hotels aren't very adventurous!");
-          }else {document.write ("You gotta be kidding me....");
-        }
-        </script>
-        <p>&copy;Tyler Huntley</p>
-      </footer>
-    </body>
+    <section>
+<script>camp();</script>
+      <article>
+
+        <img id="tent1" src="rooftoptent.jpg" alt="Jeep with rooftop tent in the woods">
+        <p class="credit">Photo by <a
+            href="https://unsplash.com/@itsbrianerickson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brian
+            Erickson</a> on <a
+            href="https://unsplash.com/s/photos/rooftop-tent?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+
+        <p class="info">Rooftop tent camping. THIS is a great way to camp! It is my personal favorite way to camp.</p>
+      </article>
+      <article>
+        <img id="tent" src="campervan.jpg" alt="Volkswagen campervan in foggy mountains">
+        <p class="credit">Photo by <a
+            href="https://unsplash.com/@zvchmiller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zach
+            Miller</a> on <a
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <p class="info">Campervan camping. Could be fun, but don't expect to get too far off of the road unless you have
+          built your vehicle for overlanding.</p>
+      </article>
+      <article>
+        <img id="tent" src="rvcamping.jpg" alt="Recreational Vehicle and starry sky">
+        <p class="credit">Photo by <a
+            href="https://unsplash.com/@hansonluu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hanson
+            Lu</a> on <a
+            href="https://unsplash.com/s/photos/rv-camping?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <p class="info">RV camping? Is this really camping? Don't expect to get too far off of the road.</p>
+      </article>
+    </section>
+    <p class="close">No matter how you like to camp, get out there and have some fun!</p>
+  </main>
+  <footer>
+    <script>tentHotel();</script>
+    <p>&copy;Tyler Huntley</p>
+  </footer>
+</body>
+
 </html>
