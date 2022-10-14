@@ -25,7 +25,6 @@ function camp() {
     console.log(doyou);
 }
 
-
 function tentHotel() {
     let camp = prompt("Camping or Hotel?");
     camp = camp.toLowerCase();
@@ -39,16 +38,15 @@ function tentHotel() {
     console.log(camp);
 }
 
-
-function rateCamping(){
+function rateCamping() {
     let outdoors = prompt("0-5 How much do you like camping?");
     while (outdoors > 5) {
         outdoors = prompt("Please choose a number between 0 and 5.");
-    // while (outdoors < 1) 
-    //     outdoors = prompt("Please choose a number between 1 and 5.");
+        // while (outdoors < 1) 
+        //     outdoors = prompt("Please choose a number between 1 and 5.");
     }
 
-    for (let i = 0; i < outdoors; i++){
+    for (let i = 0; i < outdoors; i++) {
         document.write("<img class='tent-pic' src='tent.png' alt='It's a tent!'>")
     }
 }
