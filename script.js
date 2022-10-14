@@ -41,12 +41,11 @@ function tentHotel() {
 
 
 function rateCamping(){
-    let outdoors = prompt("1-5 How much do you like camping?");
+    let outdoors = prompt("0-5 How much do you like camping?");
     while (outdoors > 5) {
-        outdoors = prompt("Please choose a number between 1 and 5.");
-    }
-    while (outdoors < 1) {
-        outdoors = prompt("Please choose a number between 1 and 5.");
+        outdoors = prompt("Please choose a number between 0 and 5.");
+    // while (outdoors < 1) 
+    //     outdoors = prompt("Please choose a number between 1 and 5.");
     }
 
     for (let i = 0; i < outdoors; i++){
