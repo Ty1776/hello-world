@@ -45,6 +45,9 @@ function rateCamping(){
     while (outdoors > 5) {
         outdoors = prompt("Please choose a number between 1 and 5.");
     }
+    while (outdoors < 1) {
+        outdoors = prompt("Please choose a number between 1 and 5.");
+    }
 
     for (let i = 0; i < outdoors; i++){
         document.write("<img class='tent-pic' src='tent.png' alt='It's a tent!'>")
